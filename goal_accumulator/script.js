@@ -13,7 +13,7 @@ function highlightCups(idx) {
   //allow user to toggle the most recent cup
   if (
     smallCups[idx].classList.contains("full") &&
-    !smallCups[idx].nextElementSibling.classList.contains("full")
+    !smallCups[idx].nextElementSibling?.classList.contains("full")
     //!smallCups[idx + 1].classList.contains("full")
   ) {
     idx--;
